@@ -1,0 +1,137 @@
+header {
+  background: rgba(255, 255, 255, 0.8); 
+  color: black;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  transition: top 0.6s ease, background 0.3s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.header {
+  font-family: 'Satisfy', serif; /* Use the imported font */
+  font-weight: bold;
+  /* Other header styles */
+}
+
+.header.scrolled {
+  background: transparent;
+}
+
+.header.hidden {
+  top: -100px; /* Adjust this value as needed to completely hide the header */
+}
+
+.header.visible {
+  top: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  max-height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 1rem;
+}
+
+.nav li:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+.nav li:not(:hover) {
+  transition: transform 0.5s ease;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  transform: scale(1.1);
+  color: #ff6347;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon.scrolled {
+  display: flex;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 248, 240, 0.8);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+#certificationspage {
+  height: 100vh;
+  background: url('../assets/contactbg.jpg') no-repeat center center;
+}
+.Cert-Header h1 {
+  margin-bottom: 50px;
+  text-align: left;
+  color:#D4F21B!important;
+position:relative;/* Position relative to the .section container */
+line-height: 1.2;
+font-size: 6.725rem; 
+}
+.text-with-offset {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+   /* Adjust the space between text and underline */
+}
+.certification-box {
+  background-color:#c4e600;
+  color:#4664c5!important;;
+  border-radius: 10px;
+  text-align: center;
+  border: solid black
+}
+
+.certification-box img {
+  height: auto;
+  object-fit:contain;
+  max-height: 200px;
+}
+
+.certification-box .card-body .card-title {
+  font-weight: bold;
+}

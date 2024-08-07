@@ -1,0 +1,144 @@
+
+a, button, .clickable {
+  cursor: pointer;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.tab {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #eee;
+  border: 1px solid #999;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.project-card {
+  margin-bottom: 20px; /* Space between cards */
+  background-color: rgba(95, 18, 88, 0.721);
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  
+}
+.project-card3 {
+  margin-bottom: 20px; /* Space between cards */
+  background-color: #1d75a5;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  
+}
+card-body{
+  background-color: rgba(95, 18, 88, 0.721);
+  border: 2px solid white;
+}
+.project-card .card-body {
+  padding: 20px; /* Padding inside each card */
+
+}
+
+.team-card3{
+  background-color: rgba(43, 73, 121, 0.638) !important;
+  margin-bottom: 20px; /* Space between cards */
+  border-radius: 50%; /* Makes the card circular */
+  overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a more pronounced card effect */
+  cursor: pointer; /* Indicates that the card is clickable */
+  height: 300px; /* Fixed height for circular card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+/* Style for each team card */
+.team-card {
+  margin-bottom: 20px; /* Space between cards */
+  border-radius: 50%; /* Makes the card circular */
+  overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a more pronounced card effect */
+  cursor: pointer; /* Indicates that the card is clickable */
+  background-color:rgba(95, 18, 88, 0.721);; /* Light background color for the card */
+  height: 300px; /* Fixed height for circular card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.team-card .card-body {
+  padding: 20px; /* Padding inside each card */
+  text-align: center; /* Center align text */
+}
+
+.team-card .card-title {
+  
+  font-size: 1.25rem; /* Adjusts the size of the card title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.team-card .card-text {
+  margin-bottom: 10px; /* Space below the text */
+}
+.card-text{
+  font-size: 1.5rem;
+}
+
+
+.team-card  .card-link  {
+  color: #eeff00; /* Bootstrap primary color */
+  text-decoration: none; /* Removes underline */
+}
+
+.team-card3 .card-link  {
+  color: #eeff00; /* Bootstrap primary color */
+  text-decoration: none; /* Removes underline */
+}
+
+.team-card .card-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/* Style for the company image */
+.company-image {
+  width: 50%;
+  margin-top: 20px;
+  height: auto;
+  border-radius: 8px; /* Slightly rounded corners for the image */
+   /* Space below the image */
+}
+
+/* Style for the Google Maps iframe container */
+.map-container {
+  border-radius: 8px; /* Slightly rounded corners for the map container */
+  overflow: hidden; /* Ensures the iframe fits nicely within the rounded corners */
+}
+#companyname{
+  margin-top: 15%;
+}

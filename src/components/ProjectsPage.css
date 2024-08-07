@@ -1,0 +1,181 @@
+/* Add this at the top or relevant section in your CSS file */
+
+/* Projects Page */
+
+#projectspage {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: all 1.5s ease;
+}
+
+.projects-container {
+  display: grid;
+  box-sizing: border-box;
+}
+.project-Header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.project-Header h1{
+  color:#D4F21B!important;
+  text-align: left;
+  font-size: 6.725rem;
+  line-height: 1;
+  position:relative;/* Position relative to the .section container */
+  line-height: 1.2;
+}
+
+.section{
+  font-family: arial,helvetica;
+  text-align:center;
+}
+
+/* Backgrounds colors for sections */
+
+
+.project-box {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.9s;
+  height: 30vh !important;
+  background: rgba(43, 73, 121, 0.638) !important;
+  border: 2px solid white !important; 
+  border-radius: 0px !important;
+
+}
+
+.project-box:hover {
+  background-color: rgba(203, 224, 49, 0.87) !important;
+  transform: scale(1.05);
+}
+
+.project-box .card-text {
+  color: white; /* Description text in white */
+  font-size: 1.5em;
+}
+
+.my-arrow{
+  font-size: 4em;
+}
+
+.project-box .card-title {
+  color: white; /* Header in white */
+  font-weight: bold;
+  font-size: 2.0em;
+  margin-bottom: 10px;
+}
+
+.project-box::before {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.1);
+}
+
+.project-box:hover::before {
+  transform: scale(1.2);
+  background-color: #D4F21B !important;
+}
+
+.project-box h3 {
+  margin-bottom: 10px;
+}
+
+.project-box p {
+  margin: 0;
+}
+
+
+#project-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content {
+  background-color:rgba(255, 255, 255, 0.638) !important;/* Semi-transparent background for better readability */ 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0.5rem;
+  }
+
+  .social-icons {
+    margin-right: 3px;
+  }
+
+  .menu-icon .bar {
+    align-self: center;
+  }
+
+  .projects-container {
+    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .project-box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-top: 15px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+  }
+
+  .email,
+  .phone {
+    font-size: 0.8rem;
+  }
+
+  .header-content {
+    padding: 0.5rem;
+  }
+
+  .social-icons {
+    margin-right: 2px;
+  }
+
+  .menu-icon .bar {
+    width: 18px;
+  }
+
+  .projects-container {
+    padding: 50px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    gap: 10px;
+  }
+
+  .project-box {
+    padding: 12px;
+  }
+  
+}

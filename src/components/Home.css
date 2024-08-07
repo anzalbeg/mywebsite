@@ -1,0 +1,250 @@
+/* General styles */
+
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+
+#landingpage {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: url('../assets/anzal1.png') no-repeat center center;
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: center;
+}
+
+.text-content {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  padding-left: 2rem;
+}
+
+.profession {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.animated-text {
+
+  color:#D4F21B!important;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+ text-align: left;
+  font-size: 8.725rem;
+  font-weight: 700;
+  line-height: 1;
+  position:relative;/* Position relative to the .section container */
+  line-height: 1.2;
+}.animated-text1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 7.725rem;
+    font-weight: 700;
+    line-height: 1;
+  font-weight: bold;
+  text-align: left;
+  color: white; 
+  position:relative;/* Position relative to the .section container */ 
+  line-height: 1.2;
+}
+
+h1 span {
+  color: #FFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .animated-text, .animated-text1 {
+    font-size: 2.5rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-text, .animated-text1 {
+    font-size: 3.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .animated-text, .animated-text1 {
+    font-size: 2.5rem; /* Adjust font size for extra-small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .animated-text, .animated-text1 {
+    font-size: 2.0rem; /* Further adjustment for very small screens */
+  }
+}
+
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 1s;
+}
+
+.custom-easing {
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.about-page .content {
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+p, ul {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.animated-text {
+  position: relative;
+  display: inline-block;
+}
+
+.horizontal-line {
+  position: relative;
+  top:0px;
+  height: 5px;
+  background-color: yellow;
+  display: block;
+  z-index: 0;
+}
+
+
+#projectspage {
+  background: url('../assets/ProjectsBG1.jpg') no-repeat center center;
+  background-size: cover;
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  p, ul {
+   
+    font-size: 0.95rem;
+  }
+  .horizontal-line {
+    position: absolute;
+    top:0px; /* Adjust the position */
+    left: 110px;
+    width: 100%;
+    height: 5px;
+    background-color: yellow;
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-heading {
+    font-size: 2.25rem;
+  }
+
+  .content {
+    padding: 15px;
+  }
+  .horizontal-line {
+    position: absolute;
+    top:0px; /* Adjust the position */
+    left: 110px;
+    width: 100%;
+    height: 5px;
+    background-color: yellow;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  p, ul {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 10px;
+  }
+  .horizontal-line {
+    height: 3px; /* Adjust height for smaller screens */
+  }
+
+  .vertical-line {
+    width: 3px; /* Adjust width for smaller screens */
+    height: 40%; /* Adjust height for smaller screens */
+    left: -2px; /* Adjust positioning */
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 1.75rem;
+  }
+
+  p, ul {
+    font-size: 0.85rem;
+  }
+
+  .content {
+    padding: 5px;
+  }
+
+
+  .horizontal-line {
+    height: 2px; /* Further adjust height for very small screens */
+  }
+
+  .vertical-line {
+    width: 2px; /* Further adjust width for very small screens */
+    height: 30%; /* Further adjust height for very small screens */
+    left: -1px; /* Further adjust positioning */
+  }
+}
+
+@media (max-width: 400px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+ .horizontal-line {
+    height: 1px; /* Adjust height for ultra-small screens */
+  }
+
+  .vertical-line {
+    width: 1px; /* Adjust width for ultra-small screens */
+    height: 20%; /* Adjust height for ultra-small screens */
+    left: 0; /* Adjust positioning to fit within the smaller viewport */
+  }
+
+  p, ul {
+    font-size: 0.8rem;
+  }
+
+  .content {
+    padding: 2px;
+  }
+
+}

@@ -1,0 +1,58 @@
+/* General styles */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.about-page .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+h1, h2 {
+  color: #111;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+p, ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+

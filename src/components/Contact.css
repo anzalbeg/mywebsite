@@ -1,0 +1,77 @@
+.contact-container {
+    padding: 50px;
+    background: url('../assets/contactbg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+  }
+  
+  .contact-left h1{
+    color:#D4F21B!important;
+    text-align: left;
+    font-size: 6.725rem;
+    margin-top: 50px;
+margin-left: 10%;
+  }
+  
+  
+  .contact-left p{
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 10%;
+    line-height: 0px;
+    color: #999;
+  }
+
+  .contact-left address p{
+    font-size: 2em;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 10%;
+    color: white !important;
+  }
+  
+  
+  .contact-right {
+    background: rgba(0, 0, 0, 0);
+    padding: 50px;
+    font-size: 2em;
+    border-radius: 8px;
+  }
+  
+  .contact-right h2 span {
+    color: #d1ff00;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #999;
+    color:white;
+  }
+  
+  .contact-right button {
+    padding: 10px;
+    background-color: #d1ff00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    columns: black;
+  }
+  
+  .contact-right button:hover {
+    background-color: #c4e600;
+  }
+  

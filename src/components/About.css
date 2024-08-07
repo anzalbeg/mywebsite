@@ -1,0 +1,125 @@
+/* Main container for the About section */
+
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+#About {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color:black;
+    min-height: 100vh;
+    background: url('../assets/aboutmebg3.jpg') no-repeat center center; 
+  background-size: cover;
+    background-position: center; 
+    /* background: linear-gradient(to bottom, #15151b, #22436C, #2F78C5, #3AF0FC, #3AFFFF); */
+    height: 100vh;
+    margin: 0; 
+    
+  }
+
+  /* Flex container for the About content */
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+  }
+
+  
+  /* Left side of the About section */
+  .about-left {
+    flex: 1;
+    min-width: 300px;
+    text-align: left; /* Align text to the left */
+    font-family: 'Karla', sans-serif;;
+  }
+  
+  /* Right side of the About section */
+  .about-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+  }
+  
+  /* About header styling */
+  .about-header {
+
+
+    margin-bottom: 20px;
+    color: #4664c5!important;
+   
+  float: left;
+  font-size: 6.725rem;
+  font-weight: 700;
+  line-height: 1;
+  position:relative;/* Position relative to the .section container */
+  line-height: 1.2;
+  }
+  
+  /* About intro styling */
+  .about-intro {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* About passion and personal styling */
+  .about-passion,
+  .about-personal {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* About image styling */
+  .about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-left,
+    .about-right {
+      max-width: 100%;
+    }
+  
+    .about-header {
+      font-size: 2.5rem;
+    }
+  
+    .about-intro {
+      font-size: 1.3rem;
+    }
+  
+    .about-passion,
+    .about-personal {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-header {
+      font-size: 2rem;
+    }
+  
+    .about-intro {
+      font-size: 1.2rem;
+    }
+  
+    .about-passion,
+    .about-personal {
+      font-size: 1rem;
+    }
+  }
+  

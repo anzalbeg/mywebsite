@@ -1,0 +1,29 @@
+#education {
+    padding: 4rem 2rem;
+    margin: 1rem 0;
+    background: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.education-item {
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.education-item h3 {
+    margin-top: 0;
+}
+
+.education-item p {
+    color: #555;
+}

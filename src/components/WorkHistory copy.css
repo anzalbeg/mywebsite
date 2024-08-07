@@ -1,0 +1,194 @@
+/* Isolate the styles for the WorkHistory section */
+#workhistory {
+  background-color: #292929;
+  color: white;
+  font-family: sans-serif;
+  overflow-y: auto; /* Enable vertical scrolling within work history section */
+  height: 100vh; /* Full height of the viewport */
+  position: relative; /* Ensure it occupies the full section */
+  padding-top: 100px;
+}
+
+#workhistory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100%;
+}
+
+.timeline {
+  position: relative; /* Ensure relative positioning for absolute elements */
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the timeline */
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%; /* Position the line in the center */
+  width: 2px;
+  height: 100%; /* Full height of container */
+  background-color: #00FF00; /* Green color for the timeline line */
+  margin-left: -1px; /* Adjust for half of width to center */
+  z-index: 1; /* Ensure it's above timeline items */
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%; /* Position the dot on the timeline line */
+  transform: translateX(-50%);
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00FF00; /* Green color for the timeline dot */
+  z-index: 2; /* Ensure it's above timeline line */
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.timeline-content {
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.8); /* Off-white color for the timeline content */
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white; /* White color for the timeline title */
+}
+
+.timeline-subtitle {
+  font-size: 18px;
+  color: white; /* White color for the timeline subtitle */
+}
+
+.timeline-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8); /* Off-white color for the timeline description */
+}
+
+.timeline-content-wrapper {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(even) .timeline-content-wrapper {
+  margin-left: 50%;
+  padding-left: 40px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content-wrapper {
+  margin-right: 50%;
+  padding-right: 40px;
+  float: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  #workhistory-container {
+    padding: 10px;
+    padding-top: 80px; /* Adjust top padding for medium screens */
+  }
+  .timeline-content {
+    max-width: 400px;
+  }
+  .timeline-content-wrapper {
+    width: 60%;
+  }
+  .timeline-item:nth-child(even) .timeline-content-wrapper {
+    margin-left: 40%;
+    padding-left: 20px;
+  }
+  .timeline-item:nth-child(odd) .timeline-content-wrapper {
+    margin-right: 40%;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  #workhistory-container {
+    padding: 5px;
+    padding-top: 60px; /* Adjust top padding for smaller screens */
+  }
+  .timeline-content {
+    max-width: 300px;
+  }
+  .timeline-content-wrapper {
+    width: 70%;
+  }
+  .timeline-item:nth-child(even) .timeline-content-wrapper {
+    margin-left: 30%;
+    padding-left: 15px;
+  }
+  .timeline-item:nth-child(odd) .timeline-content-wrapper {
+    margin-right: 30%;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #workhistory-container {
+    padding: 0;
+    padding-top: 40px; /* Adjust top padding for even smaller screens */
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline-content {
+    max-width: 100%;
+  }
+  .timeline-content-wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .timeline-dot {
+    width: 8px;
+    height: 8px;
+  }
+  .timeline-line {
+    width: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  #workhistory-container {
+    padding: 0;
+    padding-top: 20px; /* Adjust top padding for the smallest screens */
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline-content {
+    max-width: 100%;
+  }
+  .timeline-content-wrapper {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .timeline-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .timeline-line {
+    width: 0.5px;
+  }
+}
