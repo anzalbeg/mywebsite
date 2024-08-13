@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectsDetail.css';
 import { Row, Col, Card } from 'react-bootstrap';
-import hclImage from '../assets/hcl.jpeg';
+import hclImage from '%PUBLIC_URL%/hcl.jpeg';
 
 const IOTProjectDetails = () => {
   const [activeTab, setActiveTab] = useState('introduction');

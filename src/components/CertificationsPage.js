@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './CertificationsPage.css';
-import k8scert from '../assets/k8scert.png';
-import azurecerts from '../assets/azurecerts.png';
-import azuresolutioncert from '../assets/azuresolutioncert.png';
+import k8scert from '%PUBLIC_URL%/k8scert.png';
+import azurecerts from '%PUBLIC_URL%/azurecerts.png';
+import azuresolutioncert from '%PUBLIC_URL%/azuresolutioncert.png';
 
 const certifications = [
   { 

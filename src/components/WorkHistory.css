@@ -5,8 +5,8 @@
  #workhistory {
   position: relative;
   z-index: 1;
-  /* background: url('../assets/myphoto1.jpg'); */
-  background:url('../assets/contactbg.jpg') no-repeat center center;
+ 
+  background:url('%PUBLIC_URL%/contactbg.jpg') no-repeat center center;
   background-size: cover;
 }
 

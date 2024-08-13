@@ -70,7 +70,7 @@ infrastructure utilizing IBM Cloud Pak for Integration, with a focus on seamless
                 <h2 id="companyname"><b>Department Of Digital Ajman</b></h2>
                 </Col>
                 <Col md={3}>
-                 <img src={require('../assets/DDA.jpg')} alt="HCL Technologies" className="company-image" style={{ width: '100%', height: 'auto' }}
+                 <img src={require('%PUBLIC_URL%/DDA.jpg')} alt="HCL Technologies" className="company-image" style={{ width: '100%', height: 'auto' }}
                     />
                     </Col>
                     </Row>
