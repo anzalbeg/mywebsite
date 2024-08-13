@@ -2,7 +2,7 @@
     "name": "personal-website",
     "version": "1.0.0",
     "homepage": "https://anzalbeg.github.io/mywebsite",
-    "private": true,
+    "private": false,
     "scripts": {
         "start": "react-scripts start",
     "build": "react-scripts build",
