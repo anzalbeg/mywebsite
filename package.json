@@ -3,10 +3,12 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "cross-env PORT=4000 react-scripts start",
-       "build": "react-scripts build"
+        "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@fullpage/react-fullpage": "^0.1.42",
