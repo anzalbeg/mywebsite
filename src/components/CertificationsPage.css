@@ -1,6 +1,6 @@
 #certificationspage {
   height: 100vh;
-  background: url('../assets/contactbg.jpg') no-repeat center center;
+  background: url('/contactbg.jpg') no-repeat center center;
 }
 .Cert-Header h1 {
   margin-bottom: 50px;

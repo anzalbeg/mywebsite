@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import twitterIcon from '../assets/twitter.png';
-import linkedinIcon from '../assets/linkedin.png';
-import githubIcon from '../assets/github.png';
+import twitterIcon from '/twitter.png';
+import linkedinIcon from '/linkedin.png';
+import githubIcon from '/github.png';
 import './Header.css';
 
 function Header() {
