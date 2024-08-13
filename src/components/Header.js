@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import twitterIcon from './assets/twitter.png';
-import linkedinIcon from './assets/linkedin.png';
-import githubIcon from './assets/github.png';
+// import twitterIcon from '../assets/twitter.png';
+import twitterIcon from '${process.env.PUBLIC_URL}/${twitter.png}';
+import linkedinIcon from '../assets/linkedin.png';
+import githubIcon from '../assets/github.png';
 import './Header.css';
 
 function Header() {
