@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './ProjectsPage.css';
-import defaultbg from '%PUBLIC_URL%/myphoto1.jpg';
-import iotbg from '%PUBLIC_URL%/IOT.jpg';
-import blockchainbg from '%PUBLIC_URL%/Blockchain.jpg';
-import cloudbg from '%PUBLIC_URL%/azure.jpg';
-import devopsbg from '%PUBLIC_URL%/devops.jpg';
-import etlbg from '%PUBLIC_URL%/etl.jpg';
+const defaultbg = process.env.PUBLIC_URL + '/myphoto1.jpg';
+const iotbg = process.env.PUBLIC_URL + '/IOT.jpg';
+const blockchainbg = process.env.PUBLIC_URL + '/Blockchain.jpg';
+const cloudbg = process.env.PUBLIC_URL + '/azure.jpg';
+const devopsbg = process.env.PUBLIC_URL + '/devops.jpg';
+const etlbg = process.env.PUBLIC_URL + '/etl.jpg';
 import IOTProjectDetail from './IOTProjectDetail.js';
 import BlockchainProjectDetail from './BlockchainProjectDetail.js';
 import CloudProjectDetail from './CloudProjectDetail.js';

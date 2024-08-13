@@ -70,7 +70,12 @@ management</p>
                 <h2 id="companyname"><b>Department Of Digital Ajman</b></h2>
                 </Col>
                 <Col md={3}>
-                 <img src={require('%PUBLIC_URL%/DDA.jpg')} alt="" className="company-image" style={{ width: '50%', height: 'auto' }}
+                <img 
+  src={process.env.PUBLIC_URL + '/DDA.jpg'} 
+  alt="Company" 
+  className="company-image" 
+  style={{ width: '50%', height: 'auto' }} 
+/>
                     />
                     </Col>
                     </Row>

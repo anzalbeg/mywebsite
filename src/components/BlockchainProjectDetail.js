@@ -74,8 +74,12 @@ framework.</p>
                 <h2  id="companyname"><b>First American India</b></h2>
                 </Col>
                 <Col md={3}>
-                 <img src={require('%PUBLIC_URL%/FAI.jpeg')} alt="HCL Technologies" className="company-image" style={{ width: '50%', height: 'auto' }}
-                    />
+                
+                    <img 
+  src={process.env.PUBLIC_URL + '/FAI.jpeg'} 
+  alt="FAI" 
+  className="company-image" 
+  style={{ width: '50%', height: 'auto' }}/>
                     </Col>
                     </Row>
                     <Row className="">
