@@ -31,6 +31,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home projects={projects} />} />
+            <Route path="/mywebsite" element={<Home projects={projects} />} />
             {/* <Route path="/project/:projectId" element={<ProjectDetail projects={projects} />} /> */}
           </Routes>
         </main>
