@@ -13,7 +13,7 @@ const projectsData = [
     title: 'Blockchain',
     description: 'Description for Project 2',
     details: 'Detailed information about Project 2...',
-    image: 'path/to/blockchain.jpg',
+   
   },
   // Add more projects as needed
 ];

@@ -9,11 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
-import iotbg from '/IOT.jpg';
-import blockchainbg from '/Blockchain.jpg';
-import cloudbg from '/azure.jpg';
-import devopsbg from '/devops.jpg';
-import etlbg from '/etl.jpg';
+import iotbg from './assets/IOT.jpg';
+import blockchainbg from './assets/Blockchain.jpg';
+import cloudbg from './assets/azure.jpg';
+import devopsbg from './assets/devops.jpg';
+import etlbg from './assets/etl.jpg';
 
 const projects = [
   { id: 1, title: 'IOT', description: 'Description for Project 1', bgImage: iotbg },
