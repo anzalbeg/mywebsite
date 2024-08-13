@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import './Header.css';
 const twitterIcon = process.env.PUBLIC_URL + '/twitter.png';
 const linkedinIcon = process.env.PUBLIC_URL + '/linkedin.png';
 const githubIcon = process.env.PUBLIC_URL + '/github.png';
 
-import './Header.css';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
