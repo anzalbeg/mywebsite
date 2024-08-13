@@ -130,13 +130,6 @@ li {
   z-index: 0;
 }
 
-
-/* #projectspage {
-  background: url('%PUBLIC_URL%/ProjectsBG1.jpg') no-repeat center center;
-  background-size: cover;
-  
-} */
-
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .section-heading {

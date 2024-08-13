@@ -21,7 +21,7 @@ const About = () => {
           </div>
         </div>
         <div className="about-right">
-          {/* <img src={require('%PUBLIC_URL%/1000098688.png')} alt="About" className="about-image" /> */}
+         
         </div>
       </div>
     </div>

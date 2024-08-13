@@ -71,12 +71,7 @@ provide stakeholders with visually intuitive representations of key performance 
                 <h2 id="companyname"><b>Department Of Digital Ajman</b></h2>
                 </Col>
                 <Col md={3}>
-                <img 
-  src={process.env.PUBLIC_URL + '/DDA.jpg'} 
-  alt="Company" 
-  className="company-image" 
-  style={{ width: '50%', height: 'auto' }} 
-/>
+                 <img src={require('../assets/DDA.jpg')} alt="" className="company-image" style={{ width: '50%', height: 'auto' }}
                     />
                     </Col>
                     </Row>
