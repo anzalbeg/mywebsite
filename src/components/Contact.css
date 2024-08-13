@@ -1,6 +1,6 @@
 .contact-container {
     padding: 50px;
-    background: url('../assets/contactbg.jpg') no-repeat center center;
+    background: url('./mywebsite/contactbg.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     height: 100vh;

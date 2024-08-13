@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import twitterIcon from './mywebsite/twitter.png';
+import linkedinIcon from './mywebsite/linkedin.png';
+import githubIcon from './mywebsite/github.png';
 import './Header.css';
-const twitterIcon = process.env.PUBLIC_URL + '/twitter.png';
-const linkedinIcon = process.env.PUBLIC_URL + '/linkedin.png';
-const githubIcon = process.env.PUBLIC_URL + '/github.png';
-
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

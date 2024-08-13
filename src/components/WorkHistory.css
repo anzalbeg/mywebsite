@@ -6,7 +6,7 @@
   position: relative;
   z-index: 1;
  
-  background:url('../assets/contactbg.jpg') no-repeat center center;
+  background:url('./mywebsite/contactbg.jpg') no-repeat center center;
   background-size: cover;
 }
 
