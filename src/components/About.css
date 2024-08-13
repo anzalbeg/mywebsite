@@ -8,7 +8,7 @@
     padding: 60px 20px;
     color:black;
     min-height: 100vh;
-    background: url('./mywebsite/aboutmebg3.jpg') no-repeat center center; 
+    background: url('../assets/aboutmebg3.jpg') no-repeat center center; 
   background-size: cover;
     background-position: center; 
     /* background: linear-gradient(to bottom, #15151b, #22436C, #2F78C5, #3AF0FC, #3AFFFF); */
