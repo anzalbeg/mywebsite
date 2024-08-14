@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.d9fde924.css",
-    "main.js": "/mywebsite/static/js/main.ddcab015.js",
+    "main.css": "/mywebsite/static/css/main.90042544.css",
+    "main.js": "/mywebsite/static/js/main.77e7d55f.js",
     "static/media/anzal1.png": "/mywebsite/static/media/anzal1.6319d75f0d842c5a6fed.png",
     "static/media/contactbg.jpg": "/mywebsite/static/media/contactbg.46b04b9a66aa361128f1.jpg",
     "static/media/aboutmebg3.jpg": "/mywebsite/static/media/aboutmebg3.f6c75780b7385183853b.jpg",
@@ -16,11 +16,11 @@
     "static/media/azuresolutioncert.png": "/mywebsite/static/media/azuresolutioncert.f72ae5a45f364419a576.png",
     "static/media/DDA.jpg": "/mywebsite/static/media/DDA.905db7a35aadc9380696.jpg",
     "index.html": "/mywebsite/index.html",
-    "main.d9fde924.css.map": "/mywebsite/static/css/main.d9fde924.css.map",
-    "main.ddcab015.js.map": "/mywebsite/static/js/main.ddcab015.js.map"
+    "main.90042544.css.map": "/mywebsite/static/css/main.90042544.css.map",
+    "main.77e7d55f.js.map": "/mywebsite/static/js/main.77e7d55f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9fde924.css",
-    "static/js/main.ddcab015.js"
+    "static/css/main.90042544.css",
+    "static/js/main.77e7d55f.js"
   ]
 }
