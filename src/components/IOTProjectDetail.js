@@ -15,17 +15,17 @@ const IOTProjectDetails = () => {
       <Row>
         <Col md={4}>
           <div className="tabs">
-            {['introduction', 'company', 'projects', 'team'].map((tab) => (
+          {['introduction', 'company', 'projects'].map((tab) => (
               <button
                 key={tab}
                 className={`tab ${activeTab === tab ? 'active' : ''}`}
                 onClick={() => handleTabClick(tab)}
                 aria-selected={activeTab === tab}
               >
-                <span className="icon">{tab === 'introduction' ? '🏠' : tab === 'company' ? '✍️' : tab === 'projects' ? '✉️' : tab === 'code' ? '💻' : '👤'}</span>
+                <span className="icon">{tab === 'introduction' ? '🏠' : tab === 'company' ? '🏢' : tab === 'projects' ? '🚀' : ''}</span>
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
               </button>
-            ))}
+              ))}
           </div>
         </Col>
         <Col md={8}>
@@ -73,7 +73,7 @@ const IOTProjectDetails = () => {
             )}
             {activeTab === 'projects' && (
               <div>
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <Row>
                   {[
                     { title: 'Angle Helmet', text: 'A project involving the development of a helmet with integrated sensors.' },
@@ -94,7 +94,7 @@ const IOTProjectDetails = () => {
                 </Row>
               </div>
             )}
-            {activeTab === 'team' && (
+            {/* {activeTab === 'team' && (
               <div>
                 <h2>Team</h2>
                 <Row>
@@ -116,7 +116,7 @@ const IOTProjectDetails = () => {
                 </Row>
               </div>
             )}
-            
+             */}
           </div>
         </Col>
       </Row>

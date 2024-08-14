@@ -60,14 +60,6 @@ p,u{
   color: white;
   
 }
-card-body{
-  background-color: rgba(95, 18, 88, 0.721);
-  border: 2px solid white;
-}
-.project-card .card-body {
-  padding: 20px; /* Padding inside each card */
-
-}
 
 .team-card3{
   background-color: rgba(43, 73, 121, 0.638) !important;
@@ -106,17 +98,31 @@ card-body{
   text-align: center; /* Center align text */
 }
 
+.card-body{
+  background-color: #1b3f6fe9;
+    flex: 1 1 auto;
+    border: solid 1px black;
+    color: white;
+}
+
 .team-card .card-title {
   
   font-size: 1.25rem; /* Adjusts the size of the card title */
   margin-bottom: 10px; /* Space below the title */
+
 }
 
 .team-card .card-text {
   margin-bottom: 10px; /* Space below the text */
 }
-.card-text{
+.card-body .card-text{
   font-size: 1.5rem;
+color: white;
+}
+.card-body .card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+color: white;
 }
 
 

@@ -74,12 +74,12 @@ function Header() {
             <li onClick={() => handleMenuClick('certifications')}>Certifications</li>
             <li onClick={() => handleMenuClick('contact')}>Contact</li> */}
 
-            <li data-menuanchor="home"><a href="#1">Home</a></li>
-            <li data-menuanchor="about"><a href="#2">About</a></li>
-            <li data-menuanchor="projects"><a href="#3">Projects</a></li>
-            <li data-menuanchor="work"><a href="#4">Work History</a></li>
-            <li data-menuanchor="certifications"><a href="#5">Certifications</a></li>
-            <li data-menuanchor="contact"><a href="#6">Contact</a></li>
+            <li data-menuanchor="home"> <a href="#home"><span className="icon">🏠</span> Home</a></li>
+            <li data-menuanchor="about"> <a href="#about"><span className="icon">✍️</span> About</a></li>
+            <li data-menuanchor="projects"><a href="#projects"><span className="icon">💼</span> Projects</a></li>
+            <li data-menuanchor="work"><a href="#work"><span className="icon">🛠️</span> Work History</a></li>
+            <li data-menuanchor="certifications"><a href="#certifications"><span className="icon">📜</span> Certifications</a></li>
+            <li data-menuanchor="contact"><a href="#contact"><span className="icon">📞</span> Contact</a></li>
 
           </ul>
         </div>

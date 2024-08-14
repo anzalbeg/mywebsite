@@ -14,41 +14,17 @@ const IOTProjectDetails = () => {
       <Row>
         <Col md={4}>
           <div className="tabs">
-            <button
-              className={`tab ${activeTab === 'introduction' ? 'active' : ''}`}
-              onClick={() => handleTabClick('introduction')}
-            >
-              <span className="icon">🏠</span>
-              Introduction
-            </button>
-            <button
-              className={`tab ${activeTab === 'company' ? 'active' : ''}`}
-              onClick={() => handleTabClick('company')}
-            >
-              <span className="icon">✍️</span>
-              Company
-            </button>
-            <button
-              className={`tab ${activeTab === 'projects' ? 'active' : ''}`}
-              onClick={() => handleTabClick('projects')}
-            >
-              <span className="icon">✉️</span>
-              Projects
-            </button>
-            <button
-              className={`tab ${activeTab === 'team' ? 'active' : ''}`}
-              onClick={() => handleTabClick('team')}
-            >
-              <span className="icon">💻</span>
-              Team
-            </button>
-            <button
-              className={`tab ${activeTab === 'about' ? 'active' : ''}`}
-              onClick={() => handleTabClick('about')}
-            >
-              <span className="icon">👤</span>
-              About
-            </button>
+          {['introduction', 'company', 'projects'].map((tab) => (
+              <button
+                key={tab}
+                className={`tab ${activeTab === tab ? 'active' : ''}`}
+                onClick={() => handleTabClick(tab)}
+                aria-selected={activeTab === tab}
+              >
+                <span className="icon">{tab === 'introduction' ? '🏠' : tab === 'company' ? '🏢' : tab === 'projects' ? '🚀' : ''}</span>
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+              ))}
           </div>
         </Col>
         <Col md={8}>
@@ -108,7 +84,7 @@ management</p>
             )}
             {activeTab === 'projects' && (
               <div>
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <Row>
                   <Col md={6}>
                     <Card className="project-card3">
