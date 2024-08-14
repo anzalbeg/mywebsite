@@ -55,7 +55,7 @@ const IOTProjectDetails = () => {
           <div className="content">
             {activeTab === 'introduction' && (
               <div>
-                <h2>Introduction</h2>
+                <h1>Introduction</h1>
                 <b>
                   <p>I am currently serving as the Cloud Architect for the "Ajman Service Bus" project, a crucial initiative within the 
 Ajman Digital Government. The primary objective is to architect and deploy a robust Private Cloud 

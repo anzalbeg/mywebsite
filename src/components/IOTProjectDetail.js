@@ -15,7 +15,7 @@ const IOTProjectDetails = () => {
       <Row>
         <Col md={4}>
           <div className="tabs">
-            {['introduction', 'company', 'projects', 'code', 'about'].map((tab) => (
+            {['introduction', 'company', 'projects', 'team'].map((tab) => (
               <button
                 key={tab}
                 className={`tab ${activeTab === tab ? 'active' : ''}`}
@@ -29,10 +29,10 @@ const IOTProjectDetails = () => {
           </div>
         </Col>
         <Col md={8}>
-          <div className="content">
+          <div className="project-content">
             {activeTab === 'introduction' && (
               <div>
-                <h2>Introduction</h2>
+                <h1>Introduction</h1>
                 <p>
                   I joined HCL Technologies in 2016 as a Software Engineer in the IoT Domain. I have worked on cloud platforms like IBM Cloud and MS Azure to create, build, and deploy IoT web solutions from scratch using multiple technology stacks.
                 </p>
@@ -94,7 +94,7 @@ const IOTProjectDetails = () => {
                 </Row>
               </div>
             )}
-            {activeTab === 'code' && (
+            {activeTab === 'team' && (
               <div>
                 <h2>Team</h2>
                 <Row>
@@ -116,12 +116,7 @@ const IOTProjectDetails = () => {
                 </Row>
               </div>
             )}
-            {activeTab === 'about' && (
-              <div>
-                <h2>About</h2>
-                <p>Information about the website and its creator.</p>
-              </div>
-            )}
+            
           </div>
         </Col>
       </Row>

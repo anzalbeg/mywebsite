@@ -1,24 +1,22 @@
 /* Main container for the About section */
-
-@import url(https://fonts.googleapis.com/css?family=Bungee);
+@import url('https://fonts.googleapis.com/css?family=Bungee');
 #About {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    color:black;
+    color: black;
     min-height: 100vh;
-    background: url('../assets/aboutmebg3.jpg') no-repeat center center; 
-  background-size: cover;
-    background-position: center; 
-    /* background: linear-gradient(to bottom, #15151b, #22436C, #2F78C5, #3AF0FC, #3AFFFF); */
+    background: url('../assets/aboutmebg3.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */
     height: 100vh;
-    margin: 0; 
-    
-  }
+    margin: 0;
+}
 
-  /* Flex container for the About content */
-  .about-container {
+/* Flex container for the About content */
+.about-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -27,99 +25,170 @@
     justify-content: space-between;
     gap: 20px;
     position: relative;
-  }
+}
 
-  
-  /* Left side of the About section */
-  .about-left {
+/* Left side of the About section */
+.about-left {
     flex: 1;
     min-width: 300px;
     text-align: left; /* Align text to the left */
-    font-family: 'Karla', sans-serif;;
-  }
-  
-  /* Right side of the About section */
-  .about-right {
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* Right side of the About section */
+.about-right {
     flex: 1;
     display: flex;
     justify-content: center;
     min-width: 300px;
-  }
-  
-  /* About header styling */
-  .about-header {
+}
 
 
+/* About header styling */
+.about-header {
     margin-bottom: 20px;
     color: #4664c5!important;
-   
-  float: left;
-  font-size: 6.725rem;
-  font-weight: 700;
-  line-height: 1;
-  position:relative;/* Position relative to the .section container */
-  line-height: 1.2;
-  }
-  
-  /* About intro styling */
-  .about-intro {
-    font-size: 2.5rem;
+    float: left;
+    font-size: 6.725rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative; /* Position relative to the .section container */
+    line-height: 1.2;
+}
+
+/* About intro styling */
+.about-intro {
+    font-size: 1.5rem;
     margin-bottom: 20px;
-  }
-  
-  /* About passion and personal styling */
-  .about-passion,
-  .about-personal {
-    font-size: 1.2rem;
+}
+.about-intro p{
+  font-size: 2rem;
+}
+
+/* About passion and personal styling */
+.about-passion p,
+.about-personal p {
+    font-size: 2rem;
     margin-bottom: 20px;
-  }
-  
-  /* About image styling */
-  .about-image {
+}
+
+/* About image styling */
+.about-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 1200px) {
+  #About {
+      background-size: cover; /* Ensure image covers the background on larger screens */
+      background-position: center; /* Adjust image position for better fit */
   }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      align-items: center;
+
+  .about-header {
+      font-size: 4.5rem; /* Slightly smaller for large desktops */
+  }
+
+  .about-intro {
+      font-size: 5.75rem; /* Slightly smaller for large desktops */
+  }
+  p, ul {
+    font-size: 1.8rem;
+  }
+  .about-passion,
+  .about-personal {
+      font-size: 2.1rem; /* Slightly smaller for large desktops */
+  }
+}
+
+/* Responsive design for tablets and smaller laptops */
+@media (max-width: 1024px) {
+  #About {
+    background-size: cover; /* Ensure image covers the background on larger screens */
+    background-position: center; /* Adjust image position for better fit */
+}
+
+    .about-header {
+        font-size: 4.5rem;
     }
-  
+
+    .about-intro {
+        font-size: 5rem;
+      
+    }
+    p, ul {
+      font-size: 1.5rem;
+    }
+    .about-passion,
+    .about-personal {
+        font-size: 2.1rem;
+    }
+}
+
+/* Responsive design for medium devices (i.e., smaller tablets) */
+@media (max-width: 768px) {
+  #About {
+    background-size: cover; /* Ensure image covers the background on larger screens */
+    background-position: center; /* Adjust image position for better fit */
+}
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about-left,
     .about-right {
-      max-width: 100%;
+        max-width: 100%;
     }
-  
+
     .about-header {
-      font-size: 2.5rem;
+        font-size: 4rem;
     }
-  
+
     .about-intro {
+        font-size: 2.5rem;
+    }
+    p, ul {
       font-size: 1.3rem;
     }
-  
+
     .about-passion,
     .about-personal {
-      font-size: 1.1rem;
+        font-size: 1.5rem;
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+/* Responsive design for smaller screens (i.e., mobile devices) */
+@media (max-width: 576px) {
+  #About {
+    background-size: cover; /* Ensure image covers the background on larger screens */
+    background-position: center; /* Adjust image position for better fit */
+}
+
     .about-header {
-      font-size: 2rem;
+        font-size: 3rem;
     }
-  
+
     .about-intro {
-      font-size: 1.2rem;
+        font-size: 1.5rem;
     }
-  
+
     .about-passion,
     .about-personal {
+        font-size: 1rem;
+    }
+    p, ul {
       font-size: 1rem;
     }
-  }
-  
+
+    .about-left,
+    .about-right {
+        text-align: center; /* Center text on small screens */
+    }
+}
+

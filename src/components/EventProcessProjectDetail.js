@@ -55,7 +55,7 @@ const IOTProjectDetails = () => {
           <div className="content">
             {activeTab === 'introduction' && (
               <div>
-                <h2>Introduction</h2>
+                <h1>Introduction</h1>
                 <b>
                   <p>As a Cloud Architect at Department of digital Ajman.I have integrated the Event Stream Kafka service into the architecture to capture real-time production data. This 
 implementation ensures a continuous flow of data, enabling timely insights and responsiveness to changing operational scenarios.Utilized Apache NiFi, a powerful ETL (Extract, Transform, Load) tool, to model, clean, and process the captured 

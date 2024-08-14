@@ -55,7 +55,7 @@ const IOTProjectDetails = () => {
           <div className="content">
             {activeTab === 'introduction' && (
               <div>
-                <h2>Introduction</h2>
+                <h1>Introduction</h1>
                 <b>
                   <p>As a Cloud Architect at Department of digital Ajman. I have deployed multiple web application using a robust CI/CD Pipeline employing OpenShift Tekton, enhancing the efficiency of the development 
                   and deployment processes within the on-premise environment.

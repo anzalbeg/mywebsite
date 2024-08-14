@@ -55,30 +55,6 @@ h1 span {
   color: #FFF;
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) {
-  .animated-text, .animated-text1 {
-    font-size: 2.5rem; /* Adjust font size for medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .animated-text, .animated-text1 {
-    font-size: 3.2rem; /* Adjust font size for smaller screens */
-  }
-}
-
-@media (max-width: 576px) {
-  .animated-text, .animated-text1 {
-    font-size: 2.5rem; /* Adjust font size for extra-small screens */
-  }
-}
-
-@media (max-width: 400px) {
-  .animated-text, .animated-text1 {
-    font-size: 2.0rem; /* Further adjustment for very small screens */
-  }
-}
 
 
 .animate__animated.animate__fadeInLeft {
@@ -99,11 +75,6 @@ h1 span {
 
 section {
   margin-bottom: 20px;
-}
-
-p, ul {
-  font-size: 2rem;
-  line-height: 1.5;
 }
 
 
@@ -135,39 +106,34 @@ li {
   .section-heading {
     font-size: 2.5rem;
   }
-
-  p, ul {
-   
-    font-size: 0.95rem;
-  }
   .horizontal-line {
-    position: absolute;
-    top:0px; /* Adjust the position */
-    left: 110px;
-    width: 100%;
-    height: 5px;
-    background-color: yellow;
-    display: block;
+    height: 2px; /* Maintain default thickness for larger screens */
+    margin: 25px 0; /* Increase vertical spacing for better appearance */
+}
+
+
+}
+@media (max-width: 1024px) {
+  .horizontal-line {
+      height: 2px; /* Consistent thickness for medium-sized screens */
+      margin: 25px 0; /* Additional vertical spacing if needed */
   }
 }
+
 
 @media (max-width: 992px) {
   .section-heading {
     font-size: 2.25rem;
   }
+  .horizontal-line {
+    height: 2px; /* Maintain default thickness for medium-sized screens */
+    margin: 20px 0; /* Default vertical spacing */
+}
 
   .content {
     padding: 15px;
   }
-  .horizontal-line {
-    position: absolute;
-    top:0px; /* Adjust the position */
-    left: 110px;
-    width: 100%;
-    height: 5px;
-    background-color: yellow;
-    display: block;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -183,14 +149,10 @@ li {
     padding: 10px;
   }
   .horizontal-line {
-    height: 3px; /* Adjust height for smaller screens */
-  }
+    height: 2px; /* Default thickness for tablets */
+    margin: 20px 0; /* Default vertical spacing */
+}
 
-  .vertical-line {
-    width: 3px; /* Adjust width for smaller screens */
-    height: 40%; /* Adjust height for smaller screens */
-    left: -2px; /* Adjust positioning */
-  }
 }
 
 @media (max-width: 576px) {
@@ -208,14 +170,10 @@ li {
 
 
   .horizontal-line {
-    height: 2px; /* Further adjust height for very small screens */
-  }
+    height: 1px; /* Thinner line for small screens */
+    margin: 15px 0; /* Reduced vertical spacing */
+}
 
-  .vertical-line {
-    width: 2px; /* Further adjust width for very small screens */
-    height: 30%; /* Further adjust height for very small screens */
-    left: -1px; /* Further adjust positioning */
-  }
 }
 
 @media (max-width: 400px) {

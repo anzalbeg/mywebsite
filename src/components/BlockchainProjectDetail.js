@@ -55,7 +55,7 @@ const IOTProjectDetails = () => {
           <div className="content">
             {activeTab === 'introduction' && (
               <div>
-                <h2>Introduction</h2>
+                <h1>Introduction</h1>
                 <b>
                   <p>
                     I joined First American India in 2018 as a Senior Software Engineer in the Blockchain Project.Involved as a Software Engineer in Blockchain Domain for design and development the permission blockchain 

@@ -50,9 +50,9 @@ function Header() {
     <header className={`header ${visible ? 'visible' : 'hidden'}`}>
       <div className="header-content">
         <div className="contact-info">
-          <span className="name">My Name</span>
-          <span className="email">sdfadfe@gmail.com</span>
-          <span className="phone">+65465465132</span>
+          <span className="name">Anzal</span>
+          <span className="email">anzalbeg24494@gmail.com</span>
+          <span className="phone">+971556357063</span>
         </div>
         <div className="right-section">
           <div className="social-icons">
