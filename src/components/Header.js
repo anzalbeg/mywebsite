@@ -12,8 +12,8 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setVisible(true);
-    setPrevScrollPos(currentScrollPos);
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,25 +26,20 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleMenuClick= (anchor) => {
+  const handleMenuClick = (anchor) => {
+    console.log(`Clicked on ${anchor}`); // Debugging line
+
     if (window.fullpage_api) {
       window.fullpage_api.moveTo(anchor);
+    } else {
+      // For testing purposes or if FullPage.js is not used
+      console.log('FullPage API not found');
     }
+
     setTimeout(() => {
       setIsMenuOpen(false);
     }, 500); // Delay to allow transition to complete
   };
-
-  // const handleMenuClick = (anchor) => {
-  //   // Replace with your logic to handle menu item clicks
-  //   console.log(`Clicked on ${anchor}`);
-  //   setIsMenuOpen(false); // Close the menu after clicking on a menu item
-  // };
-  // const handleMenuToggle = () => {
-  //   const nav = document.querySelector('.nav');
-  //   nav.classList.toggle('open');
-  // };
-  
 
   return (
     <header className={`header ${visible ? 'visible' : 'hidden'}`}>
@@ -59,32 +54,36 @@ function Header() {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <img src={twitterIcon} alt="Twitter" className="twitter" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/anzal-beg-2a650376//" target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="LinkedIn" className="linkedin" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/anzalbeg" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="GitHub" className="github" />
             </a>
           </div>
           <div className="menu-icon" onClick={handleMenuToggle}>
-              <div className="bar">
-                <div className="bar">
-                  <div className="bar">
-                  </div>
-                </div>
-              </div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
           </div>
-          <ul className={`nav ${isMenuOpen ? 'open' : ''}`}>
-            <li onClick={() => handleMenuClick('home')}>Home</li>
+          <ul className={`nav ${isMenuOpen ? 'open' : 'close'}`}>
+            {/* <li onClick={() => handleMenuClick('home')}>Home</li>
             <li onClick={() => handleMenuClick('about')}>About</li>
-            <li onClick={() => handleMenuClick('education')}>Education</li>
             <li onClick={() => handleMenuClick('projects')}>Projects</li>
             <li onClick={() => handleMenuClick('work')}>Work History</li>
-            <li onClick={() => handleMenuClick('contact')}>Contact</li>
+            <li onClick={() => handleMenuClick('certifications')}>Certifications</li>
+            <li onClick={() => handleMenuClick('contact')}>Contact</li> */}
+
+            <li data-menuanchor="home"><a href="#1">Home</a></li>
+            <li data-menuanchor="about"><a href="#2">About</a></li>
+            <li data-menuanchor="projects"><a href="#3">Projects</a></li>
+            <li data-menuanchor="work"><a href="#4">Work History</a></li>
+            <li data-menuanchor="certifications"><a href="#5">Certifications</a></li>
+            <li data-menuanchor="contact"><a href="#6">Contact</a></li>
+
           </ul>
         </div>
-        </div>
-     
+      </div>
     </header>
   );
 }

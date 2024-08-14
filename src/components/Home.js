@@ -17,18 +17,8 @@ function HomePage() {
     if (!window.fullpage_api) {
       new fullpage('#fullpage', {
       autoScrolling: true,
-      // scrollBar: false,
-      // navigation: true, // Enable navigation dots or bullets
-      // anchors: ['home', 'about', 'projects', 'work','certifications', 'contact'], // Define section anchors
-     // easing: 'easeInOutCubic', // Adjust the easing function for JavaScript-based animations
-      // scrollingSpeed: 700, // Adjust scrolling speed
-      // fitToSection: true, // Enable fitToSection to fit content within sections
-      // fitToSectionDelay: 100, // Delay to apply fitToSection after scroll
-      // scrollHorizontally: true, // Enable horizontal scrolling
-      // controlArrows: true, // Enable arrows for horizontal slides
-      // slidesNavigation: true, // Enable slides navigation
-      // easingcss3: 'cubic-bezier(0.565, 0.295, 0.900, 0.310)'
-
+      menu: '#menu',
+       anchors: ['home', 'about', 'projects', 'work','certifications', 'contact'], // Define section anchor
     });
 
     // Log the fullPage.js API object
