@@ -2,14 +2,12 @@
 
 @import url(https://fonts.googleapis.com/css?family=Bungee);
 
-
 #landingpage {
   display: flex;
   height: 100vh;
   width: 100%;
   overflow: hidden;
   background: url('../assets/anzal1.png') no-repeat center center;
-  /* background-size: cover; */
   background-size: cover;
   background-position: center;
 }
@@ -29,25 +27,22 @@
 }
 
 .animated-text {
-
-  color:#D4F21B!important;
+  color: #D4F21B !important;
   font-family: 'Karla', sans-serif;
-  font-weight: bold;
- text-align: left;
-  font-size: 8.725rem;
-  font-weight: 700;
-  line-height: 1;
-  position:relative;/* Position relative to the .section container */
-  line-height: 1.2;
-}.animated-text1 {
-  font-family: 'Karla', sans-serif;
-  font-size: 7.725rem;
-    font-weight: 700;
-    line-height: 1;
   font-weight: bold;
   text-align: left;
-  color: white; 
-  position:relative;/* Position relative to the .section container */ 
+  font-size: 8.725rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+.animated-text1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 7.725rem;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  position: relative;
   line-height: 1.2;
 }
 
@@ -55,12 +50,7 @@ h1 span {
   color: #FFF;
 }
 
-
-
-.animate__animated.animate__fadeInLeft {
-  --animate-duration: 1s;
-}
-
+.animate__animated.animate__fadeInLeft,
 .animate__animated.animate__fadeInRight {
   --animate-duration: 1s;
 }
@@ -77,7 +67,6 @@ section {
   margin-bottom: 20px;
 }
 
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -87,14 +76,9 @@ li {
   margin-bottom: 10px;
 }
 
-.animated-text {
-  position: relative;
-  display: inline-block;
-}
-
 .horizontal-line {
   position: relative;
-  top:0px;
+  top: 0;
   height: 5px;
   background-color: yellow;
   display: block;
@@ -107,95 +91,88 @@ li {
     font-size: 2.5rem;
   }
   .horizontal-line {
-    height: 2px; /* Maintain default thickness for larger screens */
-    margin: 25px 0; /* Increase vertical spacing for better appearance */
-}
-
-
-}
-@media (max-width: 1024px) {
-  .horizontal-line {
-      height: 2px; /* Consistent thickness for medium-sized screens */
-      margin: 25px 0; /* Additional vertical spacing if needed */
+    height: 2px;
+    margin: 25px 0;
   }
 }
 
+@media (max-width: 1024px) {
+  .horizontal-line {
+    height: 2px;
+    margin: 25px 0;
+  }
+}
 
 @media (max-width: 992px) {
   .section-heading {
     font-size: 2.25rem;
   }
   .horizontal-line {
-    height: 2px; /* Maintain default thickness for medium-sized screens */
-    margin: 20px 0; /* Default vertical spacing */
-}
-
+    height: 2px;
+    margin: 20px 0;
+  }
   .content {
     padding: 15px;
   }
-
 }
 
 @media (max-width: 768px) {
   .section-heading {
     font-size: 2rem;
   }
-
   p, ul {
     font-size: 0.9rem;
   }
-
   .content {
     padding: 10px;
   }
   .horizontal-line {
-    height: 2px; /* Default thickness for tablets */
-    margin: 20px 0; /* Default vertical spacing */
-}
-
+    height: 2px;
+    margin: 20px 0;
+  }
+    #landingpage {
+    background-size: cover;
+  }
 }
 
 @media (max-width: 576px) {
   .section-heading {
     font-size: 1.75rem;
   }
-
   p, ul {
     font-size: 0.85rem;
   }
-
   .content {
     padding: 5px;
   }
-
-
   .horizontal-line {
-    height: 1px; /* Thinner line for small screens */
-    margin: 15px 0; /* Reduced vertical spacing */
-}
-
+    height: 1px;
+    margin: 15px 0;
+  }
+  #landingpage {
+    background-size: cover;
+  }
 }
 
 @media (max-width: 400px) {
   .section-heading {
     font-size: 1.5rem;
   }
- .horizontal-line {
-    height: 1px; /* Adjust height for ultra-small screens */
+  .horizontal-line {
+    height: 1px;
   }
-
   .vertical-line {
-    width: 1px; /* Adjust width for ultra-small screens */
-    height: 20%; /* Adjust height for ultra-small screens */
-    left: 0; /* Adjust positioning to fit within the smaller viewport */
+    width: 1px;
+    height: 20%;
+    left: 0;
   }
-
   p, ul {
     font-size: 0.8rem;
   }
-
   .content {
     padding: 2px;
   }
-
+  #landingpage {
+    background-size: cover;
+  }
 }
