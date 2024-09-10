@@ -1,7 +1,7 @@
 {
     "name": "personal-website",
     "version": "1.0.0",
-    "homepage": "https://anzalbeg.com",
+    "homepage": "https://anzalbeg.com/mywebsite/",
     "private": false,
     "scripts": {
         "start": "react-scripts start",
