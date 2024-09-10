@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #6A40AE;
+}
+
+#myblogsection{
+  height: 100vh;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #FFD200;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+}
+
+.project-date {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-text a {
+  color: #FFD200;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

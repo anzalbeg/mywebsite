@@ -82,8 +82,7 @@
 }
 
 /* Navigation Styles */
-.nav {
-  display: none;
+ .nav {
   flex-direction: column;
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
@@ -94,31 +93,48 @@
   height: 100%;
   padding-top: 0;
   transition: all 0.5s ease;
-}
+  display: flex; /*Ensure flexbox is used
+  /* justify-content: space-around; Distribute items evenly */
+ } 
 
 .nav.open {
   right: 0;
-  display: block;
+  display: flex;
 }
 
+.nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribute items evenly */
+  padding: 0;
+  margin: 0;
+}
 .nav ul > li {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .nav li {
-  margin: 4.3rem;
-  padding: 0;
   text-align: center;
   font-size: 1.8rem;
+  height: auto;
+   flex: 1; /*Allow items to grow and fill the available space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .nav a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   display: block;
+  width: 100%;
 }
 
 .nav.open li.active {
@@ -194,8 +210,12 @@
     height: 15px;
   }
 
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
   .nav li {
-    margin: 2rem;
+    margin: 0.5rem 0;
     font-size: 1.5rem;
   }
 

@@ -6,6 +6,7 @@ import ProjectsPage from './ProjectsPage'; // Update import to ProjectsPage
 import WorkHistory from './WorkHistory';
 import Contact from './Contact';
 import Certifications from './CertificationsPage';
+import MyBlog from './MyBlog';
 import fullpage from 'fullpage.js';
 import ReactFullpage from '@fullpage/react-fullpage';
 // Remove the invalid import statement
@@ -18,7 +19,7 @@ function HomePage() {
       new fullpage('#fullpage', {
       autoScrolling: true,
       menu: '#menu',
-       anchors: ['home', 'about', 'projects', 'work','certifications', 'contact'], // Define section anchor
+       anchors: ['home', 'about', 'projects', 'work','certifications','contact'], // Define section anchor
     });
 
     // Log the fullPage.js API object
@@ -39,6 +40,7 @@ function HomePage() {
       <ProjectsPage />
       <WorkHistory />
       <Certifications />
+      {/* <MyBlog /> */}
       <Contact />
     </div>
     </ReactFullpage.Wrapper>
