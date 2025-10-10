@@ -40,6 +40,7 @@ function HomePage() {
       <ProjectsPage />
       <WorkHistory />
       <Certifications />
+      {/* <MyBlog /> */}
       <Contact />
     </div>
     </ReactFullpage.Wrapper>

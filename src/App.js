@@ -1,13 +1,9 @@
-// App.js
-
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import ProjectDetail from './components/ProjectDetail'; // Import the ProjectDetail component
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import iotbg from './assets/IOT.jpg';
 import blockchainbg from './assets/Blockchain.jpg';
@@ -25,18 +21,18 @@ const projects = [
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/mywebsite">
       <div className="App">
         <Header />
         <main>
           <Routes>
             <Route path="/" element={<Home projects={projects} />} />
-        
+            {/* Add more routes here */}
           </Routes>
         </main>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
