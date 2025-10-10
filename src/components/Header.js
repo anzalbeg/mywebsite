@@ -80,7 +80,7 @@ function Header() {
 <li data-menuanchor="work"><a href="#4"><span className="icon">🔧</span> Work History</a></li>
 <li data-menuanchor="certifications"><a href="#5"><span className="icon">🎓</span> Certifications</a></li>
 {/* <li data-menuanchor="blog"><a href="#6"><span className="icon">📝</span> MyBlog</a></li> */}
-<li data-menuanchor="contact"><a href="#7"><span className="icon">📧</span> Contact</a></li>
+<li data-menuanchor="contact"><a href="#6"><span className="icon">📧</span> Contact</a></li>
 
 
             {/* <li data-menuanchor="home"><a href="#1">Home</a></li>
